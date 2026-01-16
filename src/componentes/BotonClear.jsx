@@ -1,0 +1,9 @@
+import "../hojas-de-estilo/BotonClear.css"
+
+export default function BotonClear(props){
+    return(
+        <div className="boton-clear">
+            {props.children}
+        </div>
+    )
+}
