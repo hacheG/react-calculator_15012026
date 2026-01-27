@@ -6,7 +6,10 @@ export default function Boton(props){
     }
     
     return(
-            <div className={`boton-contenedor ${ esOperador(props.children) ? "operador" : ""}`.trim()}>
+            <div 
+                className={`boton-contenedor ${ esOperador(props.children) ? "operador" : ""}`.trim()}
+                onClick={() => props.manejarClick(props.children)}
+                >
                 {props.children}
             </div>
     )
